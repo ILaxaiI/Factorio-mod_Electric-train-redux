@@ -1,0 +1,10 @@
+{
+  "name": "Electric-Trains-Redux",
+  "version": "0.0.2",
+  "title": "Electric Trains Redux",
+  "author": "Laxai",
+  "homepage": "",
+  "dependencies": ["base >= 1.1.0"],
+  "description": "Adds upgradeable electric trains",
+  "factorio_version": "1.1"
+}
