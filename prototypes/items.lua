@@ -134,8 +134,8 @@ if settings.startup["Lax-add-wagons"] then
         place_result = "maglev-cargo-wagon",
         stack_size = 5
     },
-    
-    
+
+
     {
         type = "item-with-entity-data",
         name = "improved-fluid-wagon" ,

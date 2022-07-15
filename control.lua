@@ -37,19 +37,28 @@ script.on_init(function()
 end)
 
 script.on_configuration_changed(function()
-    global.electricTrainList = {}
     global.stationToAccumulator = global.stationToAccumulator or {}
     local surfaces = game.surfaces
     
     
-    for i,v in pairs(surfaces) do
-        local trains = v:get_trains({name = "player"})
-        for k,luaTrain in pairs(trains) do
-            if isETrain(luaTrain) then
-                register(luaTrain)
-            end
+    
+    for i,v in pairs(global.stationToAccumulator) do
+        if v.valid then
+            local surface = v.surface
+            local replacement = surface.create_entity(
+            { 
+                name = isCharger["Charging-Station"],
+                position = v.position,
+                force = v.force
+            })
+            v.destroy()
+            global.stationToAccumulator[i] = replacement
+        else
+            global.stationToAccumulator[i] = nil
         end
     end
+    
+    
 end)
     
 
@@ -71,6 +80,7 @@ local function chargeTrains()
             local stop = train.station or train.path_end_stop
             if stop and stop.valid and isCharger[stop.name] then
                 local accu = global.stationToAccumulator[stop.unit_number]
+                if accu and accu.valid then
                 for k,v in pairs(train.locomotives) do
                     for i,loc in pairs(v) do
                         if loc.valid and listOfTrainNames[loc.name] then
@@ -84,6 +94,7 @@ local function chargeTrains()
                         end
                     end
                 end         
+                end
             end
         else
             global.electricTrainList[id] = nil
