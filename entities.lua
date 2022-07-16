@@ -106,11 +106,6 @@ if settings.startup["Lax-add-wagons"] then
 end
 
 
-
-
-
-
-
 local chargingStation = util.table.deepcopy(data.raw["train-stop"]["train-stop"])
 chargingStation.name = "Charging-Station"
 chargingStation.color={r=0.15,  g=0.25, b=0.95, a=0.7}
@@ -122,7 +117,6 @@ data.raw["train-stop"]["train-stop"].fast_replaceable_group = fp
 chargingStation.fast_replaceable_group = fp
 
 
-data.raw["train-stop"]["train-stop"].next_upgrade = "Charging-Station"
 
 
 local chargingStationCapacitorDummy = {
