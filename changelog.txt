@@ -1,10 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.10
+Date: 2022. 07. 16
+  Compatability:
+    - Fixed Compatability issues with Space exploration and Cargo ships mods.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.0.8
 Date: 2022. 07. 16
   Features:
     - Allow Quick replace of Trainstaitions.
     - Allow Upgrade planner to upgrade Trainstations.
     - Added more settings for train values, as suggested by tabr.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 2022. 04. 15

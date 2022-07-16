@@ -112,9 +112,7 @@ chargingStation.color={r=0.15,  g=0.25, b=0.95, a=0.7}
 chargingStation.minable.result = "Charging-Station"
 
 
-local fp = data.raw["train-stop"]["train-stop"].fast_replaceable_group or "train-stop"
-data.raw["train-stop"]["train-stop"].fast_replaceable_group = fp
-chargingStation.fast_replaceable_group = fp
+chargingStation.fast_replaceable_group = "train-stop"
 
 
 
