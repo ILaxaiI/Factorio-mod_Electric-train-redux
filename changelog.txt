@@ -1,0 +1,41 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.11
+Date: 2022. 11 . 06
+  Bugfixes:
+    - Added max_speed to wagons
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.10
+Date: 2022. 07. 16
+  Compatability:
+    - Fixed Compatability issues with Space exploration and Cargo ships mods.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 2022. 07. 16
+  Features:
+    - Allow Quick replace of Trainstaitions.
+    - Allow Upgrade planner to upgrade Trainstations.
+    - Added more settings for train values, as suggested by tabr.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 2022. 04. 15
+  Bugfixes:
+    - Fixed wagon minable result being messed up.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 2022. 03. 30
+  Bugfixes:
+    - Replaced accumulator with Electric energy interface, as accumulators where not charging during the night...
+    - you may need to replace existing Charging stations but the mod should handle the replacing on its own. 
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2022. 03. 30
+  Locale:
+    - Added localisation for the fuel category trains are using
+
+  Bugfixes:
+    - Fixed an issue where adding a fast_replaceable_group to accumulators would break the mod

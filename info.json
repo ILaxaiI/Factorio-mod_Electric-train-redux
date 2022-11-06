@@ -1,0 +1,10 @@
+{
+  "name": "Electric-Trains-Redux",
+  "version": "0.0.11",
+  "title": "Electric Trains Redux",
+  "author": "Laxai",
+  "homepage": "",
+  "dependencies": ["base >= 1.1.0"],
+  "description": "Adds 4 Tiers of Electric trains, with optional 3 Tiers of cargo and fluid wagons. Almost every parameter is customisable.",
+  "factorio_version": "1.1"
+}
